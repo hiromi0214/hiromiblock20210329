@@ -143,6 +143,9 @@
 
 //スマホ操作できるかの実験
           
+           //このゲームで使用する画像の準備をします。
+  ja.imageUnitObj.addEventListener("onLoad", this); //imageObjがonLoadされたらthisのonLoadを実行します。
+  ja.imageUnitObj.load(["Image/Bg.png", "Image/block.png"]); //画像を読み込みます。
            //タッチしたときの命令を追加します。
     ja.imageUnitObj["Bg"].addEventListener("touchUp", this);
     ja.imageUnitObj["Bg"].addEventListener("touchMove", this);
