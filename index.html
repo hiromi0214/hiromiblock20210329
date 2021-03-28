@@ -142,7 +142,11 @@
 
 
 //スマホ操作できるかの実験
-
+document.addEventListener('touchmove',e =>{
+      if(e.key === '') paddle.speed = -6;
+      if(e.key === 'ArrowRight') paddle.speed = 6;
+  });
+  document.addEventListener('touchend',()=> paddle.speed = 0);
   
       </script>
     </body>
