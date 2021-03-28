@@ -142,6 +142,11 @@
 
 
 //スマホ操作できるかの実験
+          
+           //タッチしたときの命令を追加します。
+    ja.imageUnitObj["Bg"].addEventListener("touchUp", this);
+    ja.imageUnitObj["Bg"].addEventListener("touchMove", this);
+  }
   //バーを動かします。
   this.touchMove = function(e)
   {
